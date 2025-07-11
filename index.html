@@ -1,96 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфигуратор автомобиля - Создайте автомобиль мечты | Интерактивный выбор деталей</title>
+
+    <meta name="description" content="Интерактивный конфигуратор автомобиля. Выбирайте и настраивайте детали автомобиля, включая кузов, крышу, окна и колеса. Создайте идеальную конфигурацию с помощью нашего простого интерфейса.">
+    <meta name="keywords" content="конфигуратор автомобиля, детали автомобиля, настройка автомобиля, автомобильный, конструктор автомобиля, дизайн автомобиля, интерактивный инструмент">
+    <meta name="author" content="Конфигуратор автомобиля">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="детали автомобиля">
+    <meta property="og:description" content="Интерактивный конфигуратор автомобиля. Выбирайте и настраивайте детали для создания идеального автомобиля.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/car-configurator">
+    <meta property="og:image" content="https://yourwebsite.com/car-configurator-preview.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Конфигуратор автомобиля - Создайте автомобиль мечты">
+    <meta name="twitter:description" content="Интерактивный конфигуратор автомобиля. Выбирайте и настраивайте детали для создания идеального автомобиля.">
+    <meta name="twitter:image" content="https://yourwebsite.com/car-configurator-preview.jpg">
+
+    <link rel="canonical" href="https://yourwebsite.com/car-configurator">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="preload" href="app.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+
+    <link rel="stylesheet" href="app.css">
+    <script src="https://app.ecwid.com/script.js?9967568" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="ec-cart-widget"
+     data-fixed="true"
+     data-fixed-position="TOP_RIGHT"
+     data-layout="BIG_ICON_COUNTER"
+     aria-label="Виджет корзины покупок">
+</div>
+
+<main class="container" role="main">
+    <div id="app-content">
+        <header>
+            <h1>Конфигуратор автомобиля</h1>
+            <p>Нажмите на деталь автомобиля, чтобы добавить её в корзину и собрать свой идеальный автомобиль.</p>
+        </header>
+
+        <section id="car-container"
+                 aria-labelledby="car-section-title"
+                 role="region">
+            <h2 id="car-section-title" class="sr-only">Интерактивная схема автомобиля</h2>
+
+            <!-- Car SVG -->
+            <div id="car-diagram" aria-label="Схема выбора деталей автомобиля" role="img">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="114.5823 90.869 740.4731 209.131"
+                     width="730px"
+                     height="215px"
+                     role="img"
+                     aria-labelledby="svg-title svg-desc">
+                    <title id="svg-title">Интерактивный конфигуратор автомобиля</title>
+                    <desc id="svg-desc">Нажмите на различные детали автомобиля, чтобы выбрать их для своей конфигурации. Детали включают кузов, крышу, окно и колеса.</desc>
+
+                    <path id="car-body"
+                          class="car-part"
+                          d="M 850 250 C 859.902 249.01 856.043 218.448 831.411 195.962 C 793.445 173.288 804.395 175.421 750.495 157.864 L 654.392 148.123 L 415.684 152.057 L 250 150 L 191.707 152.227 C 137.254 147.689 106.037 247.451 116.637 248.334 L 850 250 Z"
+                          role="button"
+                          aria-label="Кузов автомобиля - Нажмите, чтобы добавить в корзину"
+                          aria-describedby="car-body-desc"/>
+
+                    <path id="car-roof"
+                          class="car-part"
+                          d="M 673.104 167.383 L 545.589 90.869 L 312.27 92.534 L 256.277 168.647 L 673.104 167.383 Z"
+                          role="button"
+                          aria-label="Крыша автомобиля - Нажмите, чтобы добавить в корзину"
+                          aria-describedby="car-roof-desc"/>
+
+                    <path id="car-window"
+                          class="car-part"
+                          d="M610,150 L540,110 H320 L290,150 H610 Z"
+                          role="button"
+                          aria-label="Окно автомобиля - Нажмите, чтобы добавить в корзину"
+                          aria-describedby="car-window-desc"/>
+
+                    <circle id="wheel-rear"
+                            class="car-part"
+                            cx="200"
+                            cy="250"
+                            r="50"
+                            role="button"
+                            aria-label="Заднее колесо - Нажмите, чтобы добавить в корзину"
+                            aria-describedby="wheel-rear-desc"/>
+
+                    <circle id="wheel-front"
+                            class="car-part"
+                            cx="700"
+                            cy="250"
+                            r="50"
+                            role="button"
+                            aria-label="Переднее колесо - Нажмите, чтобы добавить в корзину"
+                            aria-describedby="wheel-front-desc"/>
+                </svg>
+            </div>
+
+            <div id="success-message"
+                 role="alert"
+                 aria-live="assertive"
+                 aria-labelledby="success-title">
+                <h1 id="success-title">🎉 Вы собрали автомобиль 🎉</h1>
+                <p>Все детали добавлены в вашу корзину. Сборка автомобиля завершена!</p>
+            </div>
+
+            <div class="sr-only">
+                <div id="car-body-desc">Основная структура кузова автомобиля</div>
+                <div id="car-roof-desc">Крыша автомобиля</div>
+                <div id="car-window-desc">Переднее лобовое стекло</div>
+                <div id="wheel-rear-desc">Заднее колесо в сборе</div>
+                <div id="wheel-front-desc">Переднее колесо в сборе</div>
+            </div>
+        </section>
+
+        <aside id="products-list"
+               role="complementary"
+               aria-labelledby="products-list-title">
+            <h3 id="products-list-title">Добавленные детали</h3>
+            <ul id="added-products"
+                role="list"
+                aria-label="Список выбранных деталей автомобиля"
+                aria-live="polite">
+            </ul>
+            <p id="progress-text"
+               role="status"
+               aria-live="polite">
+                Добавлено деталей: <span id="parts-count" aria-label="Количество добавленных деталей">0</span>/5
+            </p>
+        </aside>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
 </html>
